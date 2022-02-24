@@ -40,11 +40,18 @@ def handle_message(event):
     msg = event.message.text
     
 
-
-    if msg == 'hi':
-        r = '嗨'
+    if msg in ['hi', 'Hi']:
+        r = '嗨~小助手來和妳請安囉!!'
     elif msg == '小胖好難揪':
-        r = '對阿~小胖怎麼這麼難揪'
+        r = '對阿~小胖怎麼這麼難揪:"('
+    elif msg == '妳是誰':
+        r = '我是Liam的好夥伴'
+    elif msg in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'i', 'n']:
+        r = '不要說英文，小助手還在學習英文'
+    elif msg == '不要耍白癡':
+        r = '對阿~小心變阿ㄎ一ㄤ!!!'
+    elif msg == '小助手上~':
+        r = 'Yes sir 請問到底甚麼時候要出來聚?'
     else:
         return
 
