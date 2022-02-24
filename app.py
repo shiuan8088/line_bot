@@ -44,7 +44,7 @@ def handle_message(event):
         r = '嗨~小助手來和妳請安囉!!'
     elif msg == '小胖好難揪':
         r = '對阿~小胖怎麼這麼難揪:"('
-    elif msg == '妳是誰':
+    elif msg in '是誰':
         r = '我是Liam的好夥伴'
     elif msg in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'i', 'n']:
         r = '不要說英文，小助手還在學習英文'
